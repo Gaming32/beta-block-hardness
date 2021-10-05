@@ -1,38 +1,35 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "beta_hardness",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Beta Hardness Restorer",
+  "description": "Restore the block hardnesses from Minecraft beta 1.1_02",
   "authors": [
-    "Me!"
+    "Gaming32"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/Gaming32/beta-block-hardness",
+    "sources": "https://github.com/Gaming32/beta-block-hardness"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "io.github.gaming32.beta_hardness.BlockHardnessMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "beta_hardness.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",
-    "minecraft": "1.17.x",
+    "minecraft": ">=1.17",
     "java": ">=16"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
